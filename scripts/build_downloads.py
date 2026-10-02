@@ -38,7 +38,7 @@ def make_docx():
     p = doc.add_paragraph(); p.alignment = WD_ALIGN_PARAGRAPH.CENTER
     r = p.add_run('[Learner Name]'); r.bold = True; r.font.size = Pt(24); r.font.color.rgb = RGBColor(0, 118, 112)
     p = doc.add_paragraph(); p.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    p.add_run('completed Behind the Data, a HIPAA Privacy and Security self-paced learning module.').font.size = Pt(12)
+    p.add_run('completed HIPAA in Practice, a HIPAA Privacy and Security self-paced learning module.').font.size = Pt(12)
     doc.add_paragraph('')
     p = doc.add_paragraph(); p.alignment = WD_ALIGN_PARAGRAPH.CENTER
     p.add_run('HIPAA is the rule. Trust is the reason.').italic = True
