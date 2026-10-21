@@ -31,7 +31,7 @@ def make_docx():
     title.alignment = WD_ALIGN_PARAGRAPH.CENTER
     title.add_run('Certificate of Completion').font.color.rgb = RGBColor(0, 0, 0)
     p = doc.add_paragraph(); p.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    r = p.add_run('RevExpert One Self-Paced Module'); r.bold = True; r.font.size = Pt(14)
+    r = p.add_run('HIPAA Privacy and Security Self-Paced Module'); r.bold = True; r.font.size = Pt(14)
     doc.add_paragraph('')
     p = doc.add_paragraph(); p.alignment = WD_ALIGN_PARAGRAPH.CENTER
     p.add_run('This certifies that').font.size = Pt(12)
@@ -44,8 +44,8 @@ def make_docx():
     p.add_run('HIPAA is the rule. Trust is the reason.').italic = True
     doc.add_paragraph('')
     p = doc.add_paragraph(); p.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    p.add_run('Issued by RevExpert One  |  2026 Edition').font.size = Pt(10)
-    doc.save(OUT / 'revexpert-one-certificate-template.docx')
+    p.add_run('2026 Edition').font.size = Pt(10)
+    doc.save(OUT / 'hipaa-in-practice-certificate-template.docx')
 
 def wrap(c, text, x, y, width, leading=14):
     words = text.split(); line = ''
@@ -64,7 +64,7 @@ def make_pdf():
     c.setFillColor(Color(.04,.20,.22, alpha=.07)); c.setFont('Helvetica-Bold', 80)
     c.saveState(); c.translate(80, 330); c.rotate(35); c.drawString(0, 0, 'RevX1'); c.restoreState()
     c.setFillColor(HexColor('#0B3035')); c.setFont('Helvetica-Bold', 22); c.drawString(54, 736, 'Critical HIPAA Terms')
-    c.setFont('Helvetica', 10); c.setFillColor(HexColor('#51636A')); c.drawString(54, 716, 'RevExpert One learning reference  |  Educational companion to Behind the Data')
+    c.setFont('Helvetica', 10); c.setFillColor(HexColor('#51636A')); c.drawString(54, 716, 'HIPAA learning reference')
     y = 682
     for heading, body in terms:
         if y < 105:

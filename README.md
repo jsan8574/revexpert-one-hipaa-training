@@ -1,6 +1,6 @@
 # HIPAA in Practice Every Record Matters
 
-A story-driven, self-paced HIPAA Privacy & Security course for RevExpert One. The course is a responsive static Next.js experience designed for GitHub Pages.
+A story-driven, self-paced HIPAA Privacy & Security course. The course is a responsive static Next.js experience designed for GitHub Pages.
 
 ## Course features
 
